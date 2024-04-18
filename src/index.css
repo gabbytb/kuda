@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logo svg {
+    height: 20px;
+    width: 100%;
+}
+
