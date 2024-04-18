@@ -3,9 +3,9 @@ import {
     navLinks,
   
 } from "../constants";
-import { 
-    hamburger 
-} from "../assets/icons";
+// import { 
+//     hamburger 
+// } from "../assets/icons";
 import HeaderLogo from "./HeaderLogo";
 import DropDownIcon from "./DropDownIcon";
 
@@ -40,9 +40,9 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div>
-          <div className="hidden max-lg:block">
-            <img src={hamburger} alt="Hamburger" width={25} height={25} />
+        <div className="mobile-toggle">
+          <div className="hamburger">
+            <div className="hamburger--inner"></div>
           </div>
         </div>
     </header>
