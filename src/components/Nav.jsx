@@ -39,6 +39,9 @@ const Nav = () => {
         <div className="mobile-toggle">
           <div className="hamburger">
             <div className="hamburger--inner"></div>
+        <div className="mobile-toggle">
+          <div className="hamburger">
+            <div className="hamburger--inner"></div>
           </div>
         </div>
     </header>
