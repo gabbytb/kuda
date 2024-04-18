@@ -1,69 +1,64 @@
-// Personal
-import discoverPersonal from"./discoverPersonal.svg";
-import investments from "./investments.svg";
-import kudaCard from "./kudaCard.svg";
-import saveFunds from "./saveFunds.svg";
-import transferAndSpend from "./transferAndSpend.svg";
-import electricity from "./electricity.svg";
-import airtime from "./airtime.svg";
-import internet from "./internet.svg";
-import giftCards from "./giftCards.svg";
-import cardlessPayments from "./cardlessPayments.svg";
-import tvStation from "./tvStation.svg";
-import betting from "./betting.svg";
-import transPort from "./transPort.svg";
-import overDrafts from "./overDrafts.svg";
-import salaryLoan from "./salaryLoan.svg";
-import loans from "./loans.svg";
-
-
-// Business
-import discoverBusiness from "./discoverBusiness.svg";
-import businessRegistration from "./businessRegistration.svg";
-import softPOS from "./softPos.svg";
-import cashBack from "./cashback.svg";
-import posMachine from "./posMachine.svg";
-import invoicing from "./invoicing.svg";
-import salaryLoanDark from "./salaryLoanDark.svg";
-import businessAPI from "./businessApi.svg";
-import payrollBento from "./payrollBento.svg";
-import subAccounts from "./subAccounts.svg";
-import sendMoney from "./sendMoney.svg";
-import billPayments from "./billPayments.svg";
-
-
+import ArrowRightIcon from "./ArrowRightIcon";
+import DiscoverPersonal from "./DiscPersona";
+import TransferAndSpend from "./TransferAndSpend";
+import SaveFunds from "./SaveFunds";
+import Investments from "./Investments";
+import KudaCard from "./KudaCard";
+import Electricity from "./Electricity";
+import Airtime from "./Airtime";
+import Internet from "./Internet";
+import GiftCards from "./GiftCards";
+import CardlessPayments from "./CardlessPayments";
+import TVCable from "./TVCable";
+import Betting from "./Betting";
+import Transport from "./Transport";
+import OverDrafts from "./OverDrafts";
+import Loans from "./Loans";
+import SalaryLoan from "./SalaryLoan";
+import DiscoverBusiness from "./DiscBusiness";
+import BusinessRegistration from "./BusinessReg";
+import SoftPos from "./SoftPos";
+import CashBack from "./CashBack";
+import POSMachine from "./POSMachine";
+import Invoicing from "./Invoicing";
+import SalaryLoanDark from "./SalaryLoanDark";
+import BusinessAPI from "./BusinessAPI";
+import PayrollBento from "./PayrollBento";
+import SubAccounts from "./SubAccounts";
+import SendMoney from "./SendMoney";
+import BillPayments from "./BillPayments";
 
 
 
 export {
-    discoverPersonal,
-    investments,
-    kudaCard,
-    saveFunds,
-    transferAndSpend,
-    electricity,
-    airtime,
-    internet,
-    giftCards,
-    cardlessPayments,
-    tvStation,
-    betting,
-    transPort,
-    overDrafts,
-    salaryLoan,
-    loans,
+    ArrowRightIcon,
     
-    
-    discoverBusiness,
-    businessRegistration,
-    softPOS,
-    cashBack,
-    posMachine,
-    invoicing,
-    salaryLoanDark,
-    businessAPI,
-    payrollBento,
-    subAccounts,
-    sendMoney, 
-    billPayments,
-}
+    DiscoverPersonal,
+    TransferAndSpend,
+    SaveFunds,
+    Investments,
+    KudaCard,
+    Electricity,
+    Airtime,
+    Internet,
+    GiftCards,
+    CardlessPayments,
+    TVCable,
+    Betting,
+    Transport,
+    OverDrafts,
+    Loans,
+    SalaryLoan,
+    DiscoverBusiness,
+    BusinessRegistration,
+    SoftPos,
+    CashBack,
+    POSMachine,
+    Invoicing,
+    SalaryLoanDark,
+    BusinessAPI,
+    PayrollBento,
+    SubAccounts,
+    SendMoney,
+    BillPayments,
+};

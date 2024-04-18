@@ -1,56 +1,76 @@
 import { 
-    discoverPersonal, transferAndSpend, saveFunds, investments, kudaCard, electricity, airtime, internet, giftCards, cardlessPayments, tvStation, betting, transPort, overDrafts, salaryLoan, loans,
-    discoverBusiness, businessRegistration, softPOS, cashBack, posMachine, invoicing, salaryLoanDark, businessAPI, payrollBento, subAccounts, sendMoney, billPayments,
+    DiscoverPersonal,
+    TransferAndSpend,
+    SaveFunds,
+    Investments,
+    KudaCard,
+    Electricity,
+    Airtime,
+    Internet,
+    GiftCards,
+    CardlessPayments,
+    TVCable,
+    Betting,
+    Transport,
+    OverDrafts,
+    Loans,
+    SalaryLoan,
+    DiscoverBusiness,
+    BusinessRegistration,
+    SoftPos,
+    CashBack,
+    POSMachine,
+    Invoicing,
+    SalaryLoanDark,
+    BusinessAPI,
+    PayrollBento,
+    SubAccounts,
+    SendMoney,
+    BillPayments,
 } from "../assets/icons";
 
 
 
-export const navLinks = [
-    { label: "Personal" },
-    { label: "Business" },
-    { label: "Company" },
-    { label: "Help" },
-];
 export const personalMenuCardOne = [
-    { src: discoverPersonal, label: "Discover Personal" },
-    { src: transferAndSpend, label: "Transfer & Spend" },
-    { src: saveFunds, label: "Save" },
-    { src: investments, label: "Investments" },
-    { src: kudaCard, label: "Kuda Card" },
+    { src: DiscoverPersonal, label: "Discover Personal" },
+    { src: TransferAndSpend, label: "Transfer & Spend" },
+    { src: SaveFunds, label: "Save" },
+    { src: Investments, label: "Investments" },
+    { src: KudaCard, label: "Kuda Card" },
 ]
 export const personalMenuCardSubMenuOne = [
-    { src: electricity, label: "Electricity" },
-    { src: airtime, label: "Airtime" },
-    { src: internet, label: "Internet" },
-    { src: giftCards, label: "Gift Cards" },
-    { src: cardlessPayments, label: "Cardless Payments" },
-    { src: tvStation, label: "TV" },
-    { src: betting, label: "Betting" },
-    { src: transPort, label: "Transport" }
+    { src: Electricity, label: "Electricity" },
+    { src: Airtime, label: "Airtime" },
+    { src: Internet, label: "Internet" },
+    { src: GiftCards, label: "Gift Cards" },
+    { src: CardlessPayments, label: "Cardless Payments" },
+    { src: TVCable, label: "TV" },
+    { src: Betting, label: "Betting" },
+    { src: Transport, label: "Transport" }
 ]
 export const personalMenuCardSubMenuTwo = [
-    { src: overDrafts, label: "Overdrafts" },
-    { src: salaryLoan, label: "Salary Loan" },
-    { src: loans, label: "Loans" },
+    { src: OverDrafts, label: "Overdrafts" },
+    { src: SalaryLoan, label: "Salary Loan" },
+    { src: Loans, label: "Loans" },
 ]
 export const businessMenuCardOne = [
-    { src: discoverBusiness, label: "Discover Business" },
-    { src: businessRegistration, label: "Business Registration" },
-    { src: softPOS, label: "Soft Pos" },
-    { src: cashBack, label: "Cashback" },
-    { src: posMachine, label: "POS Machine" },
-    { src: invoicing, label: "Invoicing" },
-    { src: salaryLoanDark, label: "Salary Loan" },
-    { src: businessAPI, label: "Business API" },
-    { src: payrollBento, label: "Payroll with Bento" },
-    { src: subAccounts, label: "Sub Accounts" },
+    { src: DiscoverBusiness, label: "Discover Business" },
+    { src: BusinessRegistration, label: "Business Registration" },
+    { src: SoftPos, label: "Soft Pos" },
+    { src: CashBack, label: "Cashback" },
+    { src: POSMachine, label: "POS Machine" },
+    { src: Invoicing, label: "Invoicing" },
+    { src: SalaryLoanDark, label: "Salary Loan" },
+    { src: BusinessAPI, label: "Business API" },
+    { src: PayrollBento, label: "Payroll with Bento" },
+    { src: SubAccounts, label: "Sub Accounts" },
 ]
 export const businessMenuCardTwo = [
-    { src: sendMoney, label: "Send Money" },
-    { src: tvStation, label: "TV" },
-    { src: airtime, label: "Airtime and Internet Data" },
-    { src: electricity, label: "Electricity" },
-    { src: billPayments, label: "Bill Payments" },
+    { src: SendMoney, label: "Send Money" },
+    { src: TVCable, label: "TV" },
+    { src: Airtime, label: "Airtime and Internet Data" },
+    { src: Electricity, label: "Electricity" },
+    { src: BillPayments, label: "Bill Payments" },
 ]
 export const companyMenu = [
     { label: "Blog" },
@@ -65,6 +85,10 @@ export const helpMenu = [
     { label: "Security" },
     { label: "Contact Us" },
     { label: "Self Help" },
+]
+export const signUpButton = [
+    { label: "Sign in" },
+    { label: "Join kuda" }
 ]
 
 

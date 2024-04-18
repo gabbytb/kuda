@@ -24,6 +24,12 @@ module.exports = {
         "overlay": "var(--overlay)",
         "success-color-trans": "var(--successColorTrans)",
       },
+      fontFamily: {
+        custom: ['Muli'],
+      },
+      boxShadow: {
+        "3xl": "0 4px 13px rgba(0, 0, 0, .05)",
+      }
     },
   },
   plugins: [],
