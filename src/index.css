@@ -2,9 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.logo svg {
-    height: 20px;
-    width: 100%;
+.root,
+#root,
+#docs-root {
+    --primaryColor: #40196d;
+    --lightBlueColor: #1dcbef;
+    --blackColor: #000;
+    --successColor: #48d38a;
+    --negativeColor: #f7685b;
+    --textColor: #979797;
+    --whiteColor: #fff;
+    --whiteAlt: #fff;
+    --darkAlt: #000;
+    --offWhite: #f9f9f9;
+    --offWhiteTrans: hsla(228, 7%, 87%, .3);
+    --borderOff: hsla(228, 7%, 87%, .5);
+    --offText: rgba(0, 0, 0, .5);
+    --bgOffset: #f4f4f4;
+    --placeHolder: #979797;
+    --offBlue: #eff1ff;
+    --boxShadow: rgba(64, 25, 109, .07);
+    --offBlueTran: rgba(223, 227, 255, .3);
+    --primaryAlt: #40196d;
+    --offGreen: rgba(72, 211, 138, .5);
+    --ctaOffBlue: rgba(64, 25, 109, .3);
+    --overlay: rgba(64, 25, 109, .2);
+    --successColorTrans: #dcffec;
+    --redColor: #28991b;
 }
 
+
+@layer components {
+    .nav-container {
+        display: block;
+        margin: 0 auto;
+        max-width: 1500px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .logo svg {
+        height: 20px;
+        width: 100%;
+    }
+    .no-link {
+        @apply flex items-baseline
+    }
+    .color-primary {
+        @apply text-primary-color
+    }
+    .nav-menu > p {
+        @apply text-xs font-semibold cursor-pointer h-10
+    }
+    .mobile-toggle {
+        @apply flex items-center h-5 w-[23px]
+    }
+    .hamburger {
+        display: inline-block;
+        height: auto;
+        position: relative;
+        top: 3px;
+        width: 23px;
+    }
+    .hamburger .hamburger--inner {
+        transition-duration: 75ms;
+        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    }
+    .hamburger .hamburger--inner:before {
+        top: -9px;
+        transition: top 75ms ease .12s, opacity 75ms ease;
+    }
+    .hamburger .hamburger--inner:after, 
+    .hamburger .hamburger--inner:before {
+        background-color: var(--primaryAlt);
+        border-radius: 4px;
+        content: "";
+        display: block;
+        height: 2px;
+        position: absolute;
+        transition-duration: .15s;
+        transition-property: transform;
+        transition-timing-function: ease;
+        width: 20px;
+    }
+
+}

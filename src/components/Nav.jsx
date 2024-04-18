@@ -1,21 +1,17 @@
 import { Link } from "react-router-dom";
+import {
+  HeaderLogo, Dropdown
+} from "./";
 import { 
-    navLinks,
-  
+  navLinks,
 } from "../constants";
-import { 
-    hamburger 
-} from "../assets/icons";
-import HeaderLogo from "./HeaderLogo";
-import DropDownIcon from "./DropDownIcon";
-
 
 
 
 const Nav = () => {
   return (
-    <header className="">
-        <div className="flex justify-between">
+    <header className="flex justify-between items-center">
+        <div className="flex items-center">
           
           <Link to="/" alt="" className="logo">
             <HeaderLogo />
@@ -26,12 +22,12 @@ const Nav = () => {
             {
               navLinks.map((menu) => {
                 return (
-                  <li key={menu.label}>
-                    <p>{menu.label} 
-                      <span className="dropDown"><DropDownIcon /></span>
+                  <li className="nav-menu" data-toggle="dropdown" key={menu.label}>
+                    <p className="no-link color-primary">{menu.label} 
+                      <span className="dropDown"><Dropdown /></span>
                     </p>
                     <div className="dropdown-menu">
-
+                    
                     </div>
                   </li>
                 );
@@ -40,9 +36,9 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div>
-          <div className="hidden max-lg:block">
-            <img src={hamburger} alt="Hamburger" width={25} height={25} />
+        <div className="mobile-toggle">
+          <div className="hamburger">
+            <div className="hamburger--inner"></div>
           </div>
         </div>
     </header>

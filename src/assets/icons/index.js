@@ -1,5 +1,3 @@
-import hamburger from "./hamburger.svg";
-
 // Personal
 import discoverPersonal from"./discoverPersonal.svg";
 import investments from "./investments.svg";
@@ -38,9 +36,6 @@ import billPayments from "./billPayments.svg";
 
 
 export {
-    hamburger,
-
-
     discoverPersonal,
     investments,
     kudaCard,

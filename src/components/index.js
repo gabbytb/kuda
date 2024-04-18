@@ -1,6 +1,7 @@
 import HeaderLogo from "./HeaderLogo";
 import Nav from "./Nav";
-import DropDownIcon from "./DropDownIcon";
+import Dropdown from "./Dropdown";
+import NigeriaFlag from "./nationality/NigeriaFlag";
 import Footer from "./Footer";
 import FooterFixed from "./FooterFixed";
 
@@ -8,7 +9,8 @@ import FooterFixed from "./FooterFixed";
 export {
     HeaderLogo,
     Nav,
-    DropDownIcon,
+    Dropdown,
+    NigeriaFlag,
     Footer,
     FooterFixed,
 }
