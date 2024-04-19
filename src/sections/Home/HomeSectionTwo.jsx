@@ -1,6 +1,8 @@
 const HomeSectionTwo = () => {
   return (
-    <div>HomeSectionTwo</div>
+    <section className="mt-[50px]">
+      HomeSectionTwo
+    </section>
   );
 };
 export default HomeSectionTwo;

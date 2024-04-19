@@ -10,6 +10,9 @@ module.exports = {
       boxShadow: {
         "3xl": "0 4px 13px rgba(0, 0, 0, .05)",
       },
+      width: {
+        "18": "calc(100% - 100px)",
+      },
       screens: {
         'sm': '768px', 
         // i.e the screen starts from 768px and extends to 991px

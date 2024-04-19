@@ -97,12 +97,6 @@
         @apply flex justify-center items-center bg-[var(--primaryColor)] h-[43px] cursor-pointer text-white
         text-sm font-muli font-bold leading-none p-[15px] ml-[40px] min-w-[136px] max-w-[136px] rounded-[10px] capitalize
     }
-    /* .kuda-header--wrap .kuda-cta, .kuda-header--wrap .kuda-cta-outline {
-        height: 46px;
-        margin-left: 40px;
-        max-width: 136px;
-        min-width: 136px;
-    } */
     .logo {
         @apply min-w-[100px] h-5
     }
@@ -164,13 +158,18 @@
     }
 
 
-    .home-section--one {
+    .hasAnimation {
+        @apply relative mt-[-12px]
+    }
+
+
+    .home-sections {
         @apply mt-[65px] px-10 pt-12 pb-[60px]
     }
-    .home-section--wrap {
+    .home-section--one {
         @apply flex min-h-[555px] 
     }
-    .home-twin--cards {
+    .home-section-one--wrap {
         @apply flex justify-between items-center w-full
     }
     .home-section-one--48 {
@@ -179,23 +178,11 @@
     .home-section-one--52 {
         @apply w-[52%]
     }
-    .section-48--wrap {
+    .home-section-48--wrap {
         @apply max-w-[396px]
     }
-    .section-52--wrap {
+    .home-section-52--wrap {
         @apply flex justify-center
-    }
-    .hasAnimation {
-        @apply relative mt-[-12px]
-    }
-    .first-anim {
-        @apply w-full h-full overflow-hidden my-0 mx-auto outline-none
-    }
-    .second-anim {
-        @apply absolute top-0 bottom-0 left-0 right-0 h-full w-full 
-    }
-    .second-anim > div {
-        @apply flex 
     }
     .main-heading {
         @apply text-[42px] leading-[1.15] font-black font-muli text-[var(--primaryColor)] mb-5
@@ -204,8 +191,25 @@
         @apply mb-5 text-[17.5px] font-muli font-semibold text-black leading-normal
     }
     .social--links {
-        @apply flex mb-5 pt-4
+        @apply flex mb-5 pt-[14px]
+    }
+    .first--anim {
+        @apply w-full h-full overflow-hidden my-0 mx-auto outline-none
+    }
+    .first--image {
+        @apply absolute top-0 bottom-0 left-0 right-0 h-full w-full 
+    }
+    .first--image > div {
+        @apply flex w-full h-full overflow-hidden my-0 mx-auto outline-none
+    }
+    .first--image svg {
+        height: auto !important;
+        margin: auto;
+        position: relative;
+        top: -11px;
+        width: calc(100% - 100px) !important;
     }
 
 
+    
 }
