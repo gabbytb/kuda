@@ -28,9 +28,6 @@ import {
     SendMoney,
     BillPayments,
 } from "../assets/icons";
-
-
-
 export const personalMenuCardOne = [
     { src: DiscoverPersonal, label: "Discover Personal" },
     { src: TransferAndSpend, label: "Transfer & Spend" },
@@ -111,7 +108,6 @@ export const signUpButton = [
 //         imgURL: shoe4,
 //         name: "Nike Air Jordan-01",
 //         price: "$200.20",
-        
 //         subtext: "Enjoy seamless shopping with our complimentary shipping service."
 //     },
 // ];

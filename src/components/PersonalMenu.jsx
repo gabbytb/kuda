@@ -56,7 +56,6 @@ const PersonalMenu = () => {
                 </ul>
             </div>
         </div>
-    )
-}
-
+    );
+};
 export default PersonalMenu

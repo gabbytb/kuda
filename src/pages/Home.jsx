@@ -1,4 +1,9 @@
-import { Nav } from "../components";
+import { 
+    Nav 
+} from "../components";
+import {
+    HomeBody,
+} from "../sections";
 
 
 
@@ -6,6 +11,7 @@ const Home = () => {
   return (
     <>
         <Nav />
+        <HomeBody />
     </>
   )
 }
