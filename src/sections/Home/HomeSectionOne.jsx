@@ -27,6 +27,11 @@ const HomeSectionOne = () => {
                         <div className="first-anim">
                             <FirstImage />
                         </div>
+                        <div className="second-anim">
+                            <div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

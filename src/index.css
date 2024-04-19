@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&display=swap");
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,12 +33,10 @@
     --redColor: #28991b;
 }
 
-
-/* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
-/* Hide scrollbar for IE, Edge and Firefox */
+
 .no-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -87,19 +86,16 @@
     .header-center {
         @apply flex justify-center items-center ml-auto
     }
-    /* .header-right {
-        @apply 
-    } */
-    .header-center a {
-        @apply capitalize
+    .header-right {
+        @apply relative 
     }
     .header-center a:first-child {
-        @apply text-xs font-muli font-bold text-[var(--primaryAlt)]
+        @apply text-[12.25px] font-muli font-bold text-[var(--primaryAlt)] capitalize
     }
-    .header-center a:last-of-type {                      
+    .header-center a:last-child {                      
         transition: transform .6s;   
         @apply flex justify-center items-center bg-[var(--primaryColor)] h-[43px] cursor-pointer text-white
-        text-sm font-muli font-bold leading-none p-[15px] ml-[40px] min-w-[136px] max-w-[136px] rounded-lg
+        text-sm font-muli font-bold leading-none p-[15px] ml-[40px] min-w-[136px] max-w-[136px] rounded-[10px] capitalize
     }
     /* .kuda-header--wrap .kuda-cta, .kuda-header--wrap .kuda-cta-outline {
         height: 46px;
@@ -124,7 +120,7 @@
         @apply text-[var(--primaryColor)]
     }
     .nav-menu p {
-        @apply text-xs font-bold font-muli cursor-pointer h-10 items-baseline
+        @apply text-[12.25px] font-bold font-muli cursor-pointer h-10 items-baseline
     }
     li.nav-menu .no-link {
         @apply items-center
@@ -194,6 +190,12 @@
     }
     .first-anim {
         @apply w-full h-full overflow-hidden my-0 mx-auto outline-none
+    }
+    .second-anim {
+        @apply absolute top-0 bottom-0 left-0 right-0 h-full w-full 
+    }
+    .second-anim > div {
+        @apply flex 
     }
     .main-heading {
         @apply text-[42px] leading-[1.15] font-black font-muli text-[var(--primaryColor)] mb-5
