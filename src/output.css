@@ -657,13 +657,6 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
-/* .kuda-header--wrap .kuda-cta, .kuda-header--wrap .kuda-cta-outline {
-        height: 46px;
-        margin-left: 40px;
-        max-width: 136px;
-        min-width: 136px;
-    } */
-
 .logo{
   height: 1.25rem;
   min-width: 100px;
@@ -705,8 +698,25 @@ li.nav-menu .no-link{
   margin-left: 7px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
+  display: block !important;
+  padding-top: 0;
   position: absolute;
+  transition-delay: 1s !important;
+  transition: opacity .5s cubic-bezier(.455,.03,0,1), top .5s cubic-bezier(.455,.03,0,1) !important;
+  width: -webkit-max-content;
+  width: max-content;
+  left: 0;
+  opacity: 0;
+  top: 44px !important;
+  visibility: hidden;
+  visibility: visible;
+}
+
+.dropdown-wrap{
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px){
@@ -756,7 +766,12 @@ li.nav-menu .no-link{
   width: 20px;
 }
 
-.home-section--one{
+.hasAnimation{
+  position: relative;
+  margin-top: -12px;
+}
+
+.home-sections{
   margin-top: 65px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -764,12 +779,12 @@ li.nav-menu .no-link{
   padding-bottom: 60px;
 }
 
-.home-section--wrap{
+.home-section--one{
   display: flex;
   min-height: 555px;
 }
 
-.home-twin--cards{
+.home-section-one--wrap{
   display: flex;
   width: 100%;
   align-items: center;
@@ -784,62 +799,13 @@ li.nav-menu .no-link{
   width: 52%;
 }
 
-.section-48--wrap{
+.home-section-48--wrap{
   max-width: 396px;
 }
 
-.section-52--wrap{
+.home-section-52--wrap{
   display: flex;
   justify-content: center;
-}
-
-.hasAnimation{
-  position: relative;
-  margin-top: -12px;
-}
-
-.first--anim{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.second--anim{
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 100%;
-  width: 100%;
-}
-
-.second--anim > div{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.second--anim svg {
-  height: auto !important;
-  margin: auto;
-  position: relative;
-  top: -11px;
-  width: calc(100% - 100px) !important;
-  /* @apply relative top-[-11px] h-full m-auto w-18 */
 }
 
 .main-heading{
@@ -865,6 +831,49 @@ li.nav-menu .no-link{
   margin-bottom: 1.25rem;
   display: flex;
   padding-top: 14px;
+}
+
+.first--anim{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.first--image{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.first--image > div{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.first--image svg {
+  height: auto !important;
+  margin: auto;
+  position: relative;
+  top: -11px;
+  width: calc(100% - 100px) !important;
 }
 
 .visible{

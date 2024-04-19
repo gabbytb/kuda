@@ -26,7 +26,14 @@ const Nav = () => {
               <p id="menuDropdown" className="no-link color-primary">Personal
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              
+              <div className="dropdown-menu">
+                <div className="dropdown-menu--wrap drop-min--width">
+                  <div className="flex justify-between">
+
+                  </div>
+
+                </div>
+              </div>
             </li> 
             <li className="nav-menu" data-toggle="dropdown">
               <p id="menuDropdown" className="no-link color-primary">Business

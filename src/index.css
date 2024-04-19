@@ -123,7 +123,28 @@
         @apply ml-[7px]
     }
     .dropdown-menu {
-        @apply absolute 
+        display: block !important;
+        padding-top: 0;
+        position: absolute;
+        transition-delay: 1s !important;
+        transition: opacity .5s cubic-bezier(.455,.03,0,1), top .5s cubic-bezier(.455,.03,0,1) !important;
+        width: -webkit-max-content;
+        width: max-content;
+    }
+    .dropdown-menu {
+        left: 0;
+        opacity: 0;
+        top: 44px !important;
+        visibility: hidden;
+        visibility: visible;
+    }
+    .dropdown-menu--wrap {
+        border: 1px solid hsla(228, 7%, 87%, .5);
+        white-space: nowrap;
+        @apply bg-white relative rounded-[5px] py-5 px-0 shadow-4xl 
+    }
+    .drop-min--width {
+        min-width: 230px;
     }
     .mobile-toggle {
         @apply md:hidden sm:flex sm:items-center sm:h-5 sm:w-[23px]

@@ -28,6 +28,8 @@ import {
     SendMoney,
     BillPayments,
 } from "../assets/icons";
+
+
 export const personalMenuCardOne = [
     { src: DiscoverPersonal, label: "Discover Personal" },
     { src: TransferAndSpend, label: "Transfer & Spend" },
