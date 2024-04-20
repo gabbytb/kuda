@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import {
-  HeaderLogo, Dropdown,
-  // PersonalMenu, BusinessMenu, CompanyMenu, HelpMenu
+  HeaderLogo, Dropdown, 
+  PersonalNav, BusinessNav, CompanyNav,
+  HelpNav, 
+  // HelpNav
 } from "./";
 import { 
   signUpButton,
@@ -17,7 +19,7 @@ const Nav = () => {
     <header className="header">
       <div className="header-wrap nav-container">
         <div className="header-left">
-          <Link to="/" alt="" className="logo">
+          <Link to="/" alt="logo" className="logo">
             <HeaderLogo />
           </Link>
 
@@ -26,31 +28,33 @@ const Nav = () => {
               <p id="menuDropdown" className="no-link color-primary">Personal
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              <div className="dropdown-menu">
-                <div className="dropdown-menu--wrap drop-min--width">
-                  <div className="flex justify-between">
-
-                  </div>
-
-                </div>
-              </div>
+              {/* <div className="dropdown-menu"> */}
+                <PersonalNav />
+              {/* </div> */}
             </li> 
             <li className="nav-menu" data-toggle="dropdown">
               <p id="menuDropdown" className="no-link color-primary">Business
                 <span className="dropDown"><Dropdown /></span>
               </p>
-
+              {/* <div className="dropdown-menu"> */}
+                <BusinessNav />
+              {/* </div> */}
             </li>   
             <li className="nav-menu" data-toggle="dropdown">
               <p id="menuDropdown" className="no-link color-primary">Company
                 <span className="dropDown"><Dropdown /></span>
               </p>
-
-            </li> 
+              {/* <div className="dropdown-menu"> */}
+              <CompanyNav />
+              {/* </div> */}
+            </li>
             <li className="nav-menu" data-toggle="dropdown">
               <p id="menuDropdown" className="no-link color-primary">Help
                 <span className="dropDown"><Dropdown /></span>
               </p>
+              {/* <div className="dropdown-menu"> */}
+              <HelpNav />
+              {/* </div> */}
             </li> 
           </ul>
         </div>

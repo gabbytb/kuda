@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&display=swap");
 
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 :root {
@@ -32,15 +34,14 @@
     --successColorTrans: #dcffec;
     --redColor: #28991b;
 }
-
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
-
 .no-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
 
 
 @layer components {
@@ -63,13 +64,13 @@
         padding-left: 60px;
         padding-right: 60px;
     }
-    .no-link {
-        @apply flex items-baseline
-    }
     .has-left-margin {
         height: 42px;
         margin-left: 28px;
         margin-right: 0 !important;
+    }
+    .no-link {
+        @apply flex items-baseline
     }
     .header {     
         @apply flex justify-between items-center bg-white z-50 w-full h-[65px] left-0 fixed top-0 shadow-3xl
@@ -93,9 +94,7 @@
         @apply text-[12.25px] font-muli font-bold text-[var(--primaryAlt)] capitalize
     }
     .header-center a:last-child {                      
-        transition: transform .6s;   
-        @apply flex justify-center items-center bg-[var(--primaryColor)] h-[43px] cursor-pointer text-white
-        text-sm font-muli font-bold leading-none p-[15px] ml-[40px] min-w-[136px] max-w-[136px] rounded-[10px] capitalize
+        @apply flex justify-center items-center bg-[var(--primaryColor)] h-[43px] cursor-pointer text-white text-sm font-muli font-bold leading-none p-[15px] ml-[40px] min-w-[136px] max-w-[136px] rounded-[10px] capitalize
     }
     .logo {
         @apply min-w-[100px] h-5
@@ -119,8 +118,14 @@
     li.nav-menu .no-link {
         @apply items-center
     }
+    li > a {
+        display: inline-flex;
+    }
     .dropDown {
         @apply ml-[7px]
+    }
+    .menu-subtext {
+        @apply text-[11.04px] px-6 pt-4 pb-1 uppercase text-[var(--placeHolder)] 
     }
     .dropdown-menu {
         display: block !important;
@@ -135,16 +140,32 @@
         left: 0;
         opacity: 0;
         top: 44px !important;
-        visibility: hidden;
-        visibility: visible;
+        /* visibility: hidden;
+        visibility: visible; */
     }
     .dropdown-menu--wrap {
         border: 1px solid hsla(228, 7%, 87%, .5);
         white-space: nowrap;
-        @apply bg-white relative rounded-[5px] py-5 px-0 shadow-4xl 
+        @apply bg-white absolute rounded-[5px] py-5 px-0 shadow-4xl 
+    }
+    .dropdown-menu--wrap ul:last-child {
+        background-color: var(--offWhite) !important;
+    }
+    .dropdown-menu--wrap li {
+        margin: 0 !important;
+        @apply py-0 px-[26px]
+    }
+    .dropdown-menu--wrap li a {
+        @apply inline-flex items-center rounded-[5px] px-0 py-[10px] font-extralight text-sm text-black font-muli
     }
     .drop-min--width {
         min-width: 230px;
+    }
+    .dropdown-link--icon {
+        @apply flex mr-[15px]
+    }
+    .dropdown-link--icon svg {
+        @apply h-[25px] w-[25px]
     }
     .mobile-toggle {
         @apply md:hidden sm:flex sm:items-center sm:h-5 sm:w-[23px]
@@ -232,5 +253,4 @@
     }
 
 
-    
 }

@@ -1,10 +1,10 @@
 import HeaderLogo from "./HeaderLogo";
 import Nav from "./Nav";
 import Dropdown from "./Dropdown";
-import PersonalMenu from "./PersonalMenu";
-import BusinessMenu from "./BusinessMenu";
-import CompanyMenu from "./CompanyMenu";
-import HelpMenu from "./HelpMenu";
+import PersonalNav from "./PersonalNav";
+import BusinessNav from "./BusinessNav";
+import CompanyNav from "./CompanyNav";
+import HelpNav from "./HelpNav";
 import NigeriaFlag from "./nationality/NigeriaFlag";
 import Footer from "./Footer";
 import FooterFixed from "./FooterFixed";
@@ -14,10 +14,10 @@ export {
     HeaderLogo,
     Nav,
     Dropdown,
-    PersonalMenu,
-    BusinessMenu,
-    CompanyMenu,
-    HelpMenu,
+    PersonalNav,
+    BusinessNav,
+    CompanyNav,
+    HelpNav,
     NigeriaFlag,
     Footer,
     FooterFixed,
