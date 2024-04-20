@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import { DiscoverPersonal, TransferAndSpend, SaveFunds, Investments, KudaCard, Electricity, Airtime, Internet, GiftCards, CardlessPayments, TVCable, Betting, Transport, OverDrafts, SalaryLoan, Loans } from "./menu";
 
 
+
 const PersonalNav = () => {
     return (
       <div className="dropdown-menu--wrap dropdown-min--width">
         <div className="flex justify-between">
-          <ul class="drop-min--width py-6">
+          <ul class="dropdown-min--width py-6">
             <li>
                 <Link to="#" alt="">
                     <span className="dropdown-link--icon"><DiscoverPersonal /></span>
@@ -38,7 +39,7 @@ const PersonalNav = () => {
                 </Link>
             </li>
           </ul>
-          <ul class="drop-min--width py-6">
+          <ul class="dropdown-min--width py-6">
             <div className="menu-subtext">Payments</div>
             <li>
                 <Link to="#" alt="">

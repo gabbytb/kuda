@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import { DiscoverBusiness, BusinessRegistration, SoftPos, CashBack, POSMachine, Invoicing, SalaryLoanDark, BusinessAPI, PayrollBento, SubAccounts, SendMoney, TVCable, Airtime, Electricity, BillPayments } from "./menu";
 
 
+
 const BusinessNav = () => {
     return (
         <div className="dropdown-menu--wrap dropdown-min--width">
             <div className="flex justify-between">
-                <ul class="drop-min--width py-6">
+                <ul className="dropdown-min--width py-6">
                     <li>
                         <Link to="#" alt="">
                             <span className="dropdown-link--icon"><DiscoverBusiness /></span>
@@ -68,7 +69,7 @@ const BusinessNav = () => {
                         </Link>
                     </li>
                 </ul>
-                <ul>
+                <ul className="dropdown-min--width py-6">
                     <div className="menu-subtext">Payments</div>
                     <li>
                         <Link to="#" alt="">

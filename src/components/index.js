@@ -6,8 +6,10 @@ import BusinessNav from "./BusinessNav";
 import CompanyNav from "./CompanyNav";
 import HelpNav from "./HelpNav";
 import NigeriaFlag from "./nationality/NigeriaFlag";
+import SignupButton from "./SignupButton";
 import Footer from "./Footer";
 import FooterFixed from "./FooterFixed";
+
 
 
 export {
@@ -19,6 +21,7 @@ export {
     CompanyNav,
     HelpNav,
     NigeriaFlag,
+    SignupButton,
     Footer,
     FooterFixed,
 }

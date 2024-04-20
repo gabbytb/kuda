@@ -1,5 +1,5 @@
 const NigeriaFlag = (props) => (
-  <svg width={30} height={30} viewBox="0 0 30 30" fill="none" {...props}>
+  <svg viewBox="0 0 30 30" fill="none" {...props}>
     <circle opacity={0.3} cx={15} cy={15} r={15} fill="#008751" />
     <mask
       id="mask0_37774_3385_bc"

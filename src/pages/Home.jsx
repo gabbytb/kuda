@@ -1,5 +1,5 @@
 import { 
-    Nav 
+  Nav, FooterFixed, 
 } from "../components";
 import {
     HomeBody,
@@ -12,6 +12,7 @@ const Home = () => {
     <>
         <Nav />
         <HomeBody />
+        <FooterFixed />
     </>
   )
 }
