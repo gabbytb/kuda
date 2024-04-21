@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-import { HeaderLogo, Dropdown, NigeriaFlag, SignupButton, PersonalNav, BusinessNav, CompanyNav, HelpNav } from "./";
+import { 
+  HeaderLogo, Dropdown, NigeriaFlag, SignupButton, 
+  PersonalNav, BusinessNav, CompanyNav, HelpNav 
+} from "./";
 import { signUpButton } from "../constants";
 
 
@@ -20,33 +23,33 @@ const Nav = () => {
               <p id="menuDropdown" className="no-link color-primary">Personal
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              <div className="dropdown-menu">
+              {/* <div className="dropdown-menu"> */}
                 <PersonalNav />
-              </div>
+              {/* </div> */}
             </li> 
             <li className="nav-menu" data-toggle="dropdown">
               <p id="menuDropdown" className="no-link color-primary">Business
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              <div className="dropdown-menu">
+              {/* <div className="dropdown-menu"> */}
                 <BusinessNav />
-              </div>
+              {/* </div> */}
             </li>   
             <li className="nav-menu" data-toggle="dropdown">
               <p id="menuDropdown" className="no-link color-primary">Company
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              <div className="dropdown-menu">
+              {/* <div className="dropdown-menu"> */}
                 <CompanyNav />
-              </div>
+              {/* </div> */}
             </li>
             <li className="nav-menu" data-toggle="dropdown">
               <p id="menuDropdown" className="no-link color-primary">Help
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              <div className="dropdown-menu">
+              {/* <div className="dropdown-menu"> */}
                 <HelpNav />
-              </div>
+              {/* </div> */}
             </li> 
           </ul>
         </div>

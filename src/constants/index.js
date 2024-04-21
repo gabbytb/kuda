@@ -1,50 +1,106 @@
-// export const personalMenuCardOne = [
-//     { src: discoverPersonal, label: "Discover Personal" },
-//     { src: transferAndSpend, label: "Transfer & Spend" },
-//     { src: saveFunds, label: "Save" },
-//     { src: investments, label: "Investments" },
-//     { src: kudaCard, label: "Kuda Card" },
-// ]
-// export const personalMenuCardSubMenuOne = [
-//     { src: electricity, label: "Electricity" },
-//     { src: airtime, label: "Airtime" },
-//     { src: internet, label: "Internet" },
-//     { src: giftCards, label: "Gift Cards" },
-//     { src: cardlessPayments, label: "Cardless Payments" },
-//     { src: tvCable, label: "TV" },
-//     { src: betting, label: "Betting" },
-//     { src: transport, label: "Transport" }
-// ]
-// export const personalMenuCardSubMenuTwo = [
-//     { src: overDrafts, label: "Overdrafts" },
-//     { src: salaryLoan, label: "Salary Loan" },
-//     { src: loans, label: "Loans" },
-// ]
-// export const businessMenuCardOne = [
-//     { src: discoverBusiness, label: "Discover Business" },
-//     { src: businessRegistration, label: "Business Registration" },
-//     { src: softPos, label: "Soft Pos" },
-//     { src: cashBack, label: "Cashback" },
-//     { src: posMachine, label: "POS Machine" },
-//     { src: invoicing, label: "Invoicing" },
-//     { src: salaryLoanDark, label: "Salary Loan" },
-//     { src: businessAPI, label: "Business API" },
-//     { src: payrollBento, label: "Payroll with Bento" },
-//     { src: subAccounts, label: "Sub Accounts" },
-// ]
-// export const businessMenuCardTwo = [
-//     { src: sendMoney, label: "Send Money" },
-//     { src: tvCable, label: "TV" },
-//     { src: airtime, label: "Airtime and Internet Data" },
-//     { src: electricity, label: "Electricity" },
-//     { src: billPayments, label: "Bill Payments" },
-// ]
+// Personal Nav Menu
+export const discoverPersonalSubMenu = [
+    { label: "Discover Personal" }
+]
+export const transferAndSpendSubMenu = [
+    { label: "Transfer & Spend" }
+]
+export const saveFundsSubMenu = [
+    { label: "Save" }
+]
+export const investmentsSubMenu = [ 
+    { label: "Investments" }
+]
+export const kudaCardSubMenu= [
+    { label: "Kuda Card" }
+]
+export const electricitySubMenu = [
+    { label: "Electricity" }
+]
+export const airtimeSubMenu = [
+    { label: "Airtime" }
+]
+export const internetSubMenu = [
+    { label: "Internet" }
+]
+export const giftCardsSubMenu = [
+    { label: "Gift Cards" }
+]
+export const cardlessPaymentsSubMenu = [
+    { label: "Cardless Payments" }
+]
+export const tvCableSubMenu = [
+    { label: "TV" }
+]
+export const bettingSubMenu = [
+    { label: "Betting" }
+]
+export const transportSubMenu = [
+    { label: "Transport" }
+]
+export const overDraftsSubMenu = [
+    { label: "Overdrafts" }
+]
+export const salaryLoanSubMenu = [
+    { label: "Salary Loan" }
+]
+export const loansSubMenu = [
+    { label: "Loans" }
+]
+
+
+// Business Nav Menu
+export const discoverBusinessSubMenu = [
+    { label: "Discover Business" }
+]
+export const businessRegistrationSubMenu = [
+    { label: "Business Registration" }
+]
+export const softPosSubMenu = [
+    { label: "Soft Pos" }
+]
+export const cashBackSubMenu = [
+    { label: "Cashback" }
+]
+export const posMachineSubMenu = [
+    { label: "POS Machine" }
+]
+export const invoicingSubMenu = [
+    { label: "Invoicing" }
+]
+export const salaryLoanDarkSubMenu = [ 
+    { label: "Salary Loan" }
+]
+export const businessAPISubMenu = [
+    { label: "Business API" }
+]
+export const payrollBentoSubMenu = [
+    { label: "Payroll with Bento" }
+]
+export const subAccountsSubMenu = [
+    { label: "Sub Accounts" }
+]
+export const sendMoneySubMenu = [
+    { label: "Send Money" }
+]
+export const airtimeAndInternetDataSubMenu = [
+    { label: "Airtime and Internet Data" }
+]
+export const billPaymentsSubMenu = [
+    { label: "Bill Payments" }
+]
+
+
+// Company Nav Menu
 export const companyMenu = [
     { label: "Blog" },
     { label: "Press" },
     { label: "Join Our Team" },
     { label: "About Us" },
 ]
+
+
+// Help Nav Menu
 export const helpMenu = [
     { label: "Get Help" },
     { label: "Scam Awareness" },
@@ -53,6 +109,8 @@ export const helpMenu = [
     { label: "Contact Us" },
     { label: "Self Help" },
 ]
+
+
 export const signUpButton = [
     { label: "Sign in" },
     { label: "Join kuda" }

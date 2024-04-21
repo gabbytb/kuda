@@ -1,113 +1,133 @@
-import { Link } from "react-router-dom";
-import { DiscoverPersonal, TransferAndSpend, SaveFunds, Investments, KudaCard, Electricity, Airtime, Internet, GiftCards, CardlessPayments, TVCable, Betting, Transport, OverDrafts, SalaryLoan, Loans } from "./menu";
+import {
+    airtimeSubMenu, bettingSubMenu, cardlessPaymentsSubMenu, discoverPersonalSubMenu, electricitySubMenu, giftCardsSubMenu, internetSubMenu, investmentsSubMenu, kudaCardSubMenu, loansSubMenu, overDraftsSubMenu, salaryLoanSubMenu, saveFundsSubMenu, transferAndSpendSubMenu, transportSubMenu, tvCableSubMenu, 
+} from "../constants";
+import {
+    Airtime, Betting, CardlessPayments, DiscoverPersonal, Electricity, GiftCards, Internet, Investments, KudaCard, Loans, OverDrafts, SalaryLoan, SaveFunds, TransferAndSpend, Transport, TVCable,
+} from "./menu";
 
 
 
 const PersonalNav = () => {
     return (
-      <div className="dropdown-menu--wrap dropdown-min--width">
+      <div className="dropdown-menu--wrap pt-0 dropdown-min--width">
         <div className="flex justify-between">
           <ul class="dropdown-min--width py-6">
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><DiscoverPersonal /></span>
-                    <span>Discover Personal</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><TransferAndSpend /></span>
-                    <span>Transfer and Spend</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><SaveFunds /></span>
-                    <span>Save</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><Investments /></span>
-                    <span>Investments</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><KudaCard /></span>
-                    <span>Kuda Card</span>
-                </Link>
-            </li>
+            {
+                discoverPersonalSubMenu.map((discoverPersonalMenu) => {
+                    return (
+                        <DiscoverPersonal key={discoverPersonalMenu.label} {...discoverPersonalMenu} />
+                    );
+                })
+            }
+            {
+                transferAndSpendSubMenu.map((transferAndSpendMenu) => {
+                    return (
+                        <TransferAndSpend key={transferAndSpendMenu.label} {...transferAndSpendMenu} />
+                    );
+                })
+            }
+            {
+                saveFundsSubMenu.map((saveFundsMenu) => {
+                    return (
+                        <SaveFunds key={saveFundsMenu.label} {...saveFundsMenu} />
+                    );
+                })
+            }
+            {
+                investmentsSubMenu.map((investmentsMenu) => {
+                    return (
+                        <Investments key={investmentsMenu.label} {...investmentsMenu} />
+                    );
+                })
+            }
+            {
+                kudaCardSubMenu.map((KudaCardMenu) => {
+                    return (
+                        <KudaCard key={KudaCardMenu.label} {...KudaCardMenu} />
+                    );
+                })
+            }
           </ul>
           <ul class="dropdown-min--width py-6">
             <div className="menu-subtext">Payments</div>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><Electricity /></span>
-                    <span className="capitalize">Electricity</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><Airtime /></span>
-                    <span className="capitalize">Airtime</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><Internet /></span>
-                    <span className="capitalize">Internet</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><GiftCards /></span>
-                    <span className="capitalize">gift cards</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><CardlessPayments /></span>
-                    <span className="capitalize">cardless payments</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><TVCable /></span>
-                    <span className="capitalize">TV</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><Betting /></span>
-                    <span className="capitalize">Betting</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><Transport /></span>
-                    <span className="capitalize">Transport</span>
-                </Link>
-            </li>
+            {
+               electricitySubMenu.map((electricityMenu) => {
+                    return (
+                        <Electricity key={electricityMenu.label} {...electricityMenu} />
+                    );
+                })
+            }
+            {
+               airtimeSubMenu.map((airtimeMenu) => {
+                    return (
+                        <Airtime key={airtimeMenu.label} {...airtimeMenu} />
+                    );
+                })
+            }
+            {
+               internetSubMenu.map((internetMenu) => {
+                    return (
+                        <Internet key={internetMenu.label} {...internetMenu} />
+                    );
+                })
+            }
+            {
+               giftCardsSubMenu.map((giftCardsmenu) => {
+                    return (
+                        <GiftCards key={giftCardsmenu.label} {...giftCardsmenu} />
+                    );
+                })
+            }
+            {
+               cardlessPaymentsSubMenu.map((cardlessPaymentsMenu) => {
+                    return (
+                        <CardlessPayments key={cardlessPaymentsMenu.label} {...cardlessPaymentsMenu} />
+                    );
+                })
+            }
+            {
+               tvCableSubMenu.map((tvCableMenu) => {
+                    return (
+                        <TVCable key={tvCableMenu.label} {...tvCableMenu} />
+                    );
+                })
+            }
+            {
+               bettingSubMenu.map((bettingMenu) => {
+                    return (
+                        <Betting key={bettingMenu.label} {...bettingMenu} />
+                    );
+                })
+            }
+            {
+               transportSubMenu.map((transportMenu) => {
+                    return (
+                        <Transport key={transportMenu.label} {...transportMenu} />
+                    );
+                })
+            }
             <div className="menu-subtext">Credit</div>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><OverDrafts /></span>
-                    <span className="capitalize">Overdrafts</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><SalaryLoan /></span>
-                    <span className="capitalize">Salary Loan</span>
-                </Link>
-            </li>
-            <li>
-                <Link to="#" alt="">
-                    <span className="dropdown-link--icon"><Loans /></span>
-                    <span className="capitalize">Loans</span>
-                </Link>
-            </li>
+            {
+               overDraftsSubMenu.map((overDraftsMenu) => {
+                    return (
+                        <OverDrafts key={overDraftsMenu.label} {...overDraftsMenu} />
+                    );
+                })
+            }
+            {
+               salaryLoanSubMenu.map((salaryLoanMenu) => {
+                    return (
+                        <SalaryLoan key={salaryLoanMenu.label} {...salaryLoanMenu} />
+                    );
+                })
+            }
+            {
+               loansSubMenu.map((loanMenu) => {
+                    return (
+                        <Loans key={loanMenu.label} {...loanMenu} />
+                    );
+                })
+            }
           </ul>
         </div>
       </div>
