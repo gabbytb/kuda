@@ -49,6 +49,7 @@ export const loansSubMenu = [
 ]
 
 
+
 // Business Nav Menu
 export const discoverBusinessSubMenu = [
     { label: "Discover Business" }
@@ -91,6 +92,7 @@ export const billPaymentsSubMenu = [
 ]
 
 
+
 // Company Nav Menu
 export const companyMenu = [
     { label: "Blog" },
@@ -98,6 +100,7 @@ export const companyMenu = [
     { label: "Join Our Team" },
     { label: "About Us" },
 ]
+
 
 
 // Help Nav Menu
@@ -111,6 +114,8 @@ export const helpMenu = [
 ]
 
 
+
+// Login & SignUp Links
 export const signUpButton = [
     { label: "Sign in" },
     { label: "Join kuda" }
