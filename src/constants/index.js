@@ -1,96 +1,174 @@
-// Personal Nav Menu
-export const discoverPersonalSubMenu = [
-    { label: "Discover Personal" }
-]
-export const transferAndSpendSubMenu = [
-    { label: "Transfer & Spend" }
-]
-export const saveFundsSubMenu = [
-    { label: "Save" }
-]
-export const investmentsSubMenu = [ 
-    { label: "Investments" }
-]
-export const kudaCardSubMenu= [
-    { label: "Kuda Card" }
-]
-export const electricitySubMenu = [
-    { label: "Electricity" }
-]
-export const airtimeSubMenu = [
-    { label: "Airtime" }
-]
-export const internetSubMenu = [
-    { label: "Internet" }
-]
-export const giftCardsSubMenu = [
-    { label: "Gift Cards" }
-]
-export const cardlessPaymentsSubMenu = [
-    { label: "Cardless Payments" }
-]
-export const tvCableSubMenu = [
-    { label: "TV" }
-]
-export const bettingSubMenu = [
-    { label: "Betting" }
-]
-export const transportSubMenu = [
-    { label: "Transport" }
-]
-export const overDraftsSubMenu = [
-    { label: "Overdrafts" }
-]
-export const salaryLoanSubMenu = [
-    { label: "Salary Loan" }
-]
-export const loansSubMenu = [
-    { label: "Loans" }
-]
+import { 
+    DiscoverPersonalIconURL,
+    TransferAndSpendIconURL,
+    SaveFundsIconURL,
+    InvestmentsIconURL,
+    KudaCardIconURL,
+    ElectricityIconURL,
+    AirtimeIconURL,
+    InternetIconURL,
+    GiftCardsIconURL,
+    CardlessPaymentsIconURL,
+    TVCableIconURL,
+    BettingIconURL,
+    TransportIconURL,
+    OverDraftsIconURL,
+    LoansIconURL,
+    SalaryLoanIconURL,
+    DiscoverBusinessIconURL,
+    BusinessRegistrationIconURL,
+    SoftPosIconURL,
+    CashBackIconURL,
+    POSMachineIconURL,
+    InvoicingIconURL,
+    SalaryLoanDarkIconURL,
+    BusinessApiIconURL,
+    PayrollBentoIconURL,
+    SubAccountsIconURL,
+    SendMoneyIconURL,
+    BillPaymentsIconURL,
+} from "../assets/icons";
 
+
+
+// Personal Nav Menu
+export const personalMenuOne = [
+    { 
+        imgURL: <DiscoverPersonalIconURL />,
+        label: "discover personal" 
+    },
+    {
+        imgURL: <TransferAndSpendIconURL />,
+        label: "transfer & spend"
+    },
+    {
+        imgURL: <SaveFundsIconURL />,
+        label: "save"
+    },
+    {
+        imgURL: <InvestmentsIconURL />, 
+        label: "investments"
+    },
+    {
+        imgURL: <KudaCardIconURL />,
+        label: "kuda card"
+    }
+]
+export const personalMenuTwoPayments = [
+    {
+        imgURL: <ElectricityIconURL />,
+        label: "Electricity"
+    },
+    {
+        imgURL: <AirtimeIconURL />,
+        label: "Airtime"
+    },
+    {
+        imgURL: <InternetIconURL />,
+        label: "Internet"
+    },
+    {
+        imgURL: <GiftCardsIconURL />,
+        label: "Gift Cards"
+    },
+    {
+        imgURL: <CardlessPaymentsIconURL />,
+        label: "Cardless Payments"
+    },
+    {
+        imgURL: <TVCableIconURL />,
+        label: "TV"
+    },
+    {
+        imgURL: <BettingIconURL />,
+        label: "Betting"
+    },
+    {
+        imgURL: <TransportIconURL />,
+        label: "Transport"
+    },
+]
+export const personalMenuTwoCredit = [
+    {
+        imgURL: <OverDraftsIconURL />,
+        label: "Overdrafts"
+    },
+    {
+        imgURL: <SalaryLoanIconURL />,
+        label: "Salary Loan"
+    },
+    {
+        imgURL: <LoansIconURL />,
+        label: "Loans"
+    },
+]
 
 
 // Business Nav Menu
-export const discoverBusinessSubMenu = [
-    { label: "Discover Business" }
+export const businessMenuOne= [
+    {
+        imgURL: <DiscoverBusinessIconURL />,
+        label: "Discover Business"
+    },
+    {
+        imgURL: <BusinessRegistrationIconURL />,
+        label: "Business Registration"
+    },
+    {
+        imgURL: <SoftPosIconURL />,
+        label: "Soft POS"
+    },
+    {
+        imgURL: <CashBackIconURL />,
+        label: "Cashback"
+    },
+    {
+        imgURL: <POSMachineIconURL />,
+        label: "POS Machine"
+    },
+    {
+        imgURL: <InvoicingIconURL />,
+        label: "Invoicing"
+    },
+    {
+        imgURL: <SalaryLoanDarkIconURL />,
+        label: "Salary Loan"
+    },
+    {
+        imgURL: <BusinessApiIconURL />,
+        label: "Business API"
+    },
+    {
+        imgURL: <PayrollBentoIconURL />,
+        label: "Payroll with Bento"
+    },
+    {
+        imgURL: <SubAccountsIconURL />,
+        label: "Sub Accounts"
+    },
 ]
-export const businessRegistrationSubMenu = [
-    { label: "Business Registration" }
+export const businessMenuTwoPayments = [
+    {
+        imgURL: <SendMoneyIconURL />,
+        label: "Send Money"
+    },
+    {
+        imgURL: <TVCableIconURL />,
+        label: "TV"
+    },
+    {
+        imgURL: <AirtimeIconURL />,
+        label: "Airtime and Internet Data"
+    },
+    {
+        imgURL: <ElectricityIconURL />,
+        label: "Electricity"
+    },
+    {
+        imgURL: <BillPaymentsIconURL />,
+        label: "Bill Payments"
+    }
 ]
-export const softPosSubMenu = [
-    { label: "Soft Pos" }
-]
-export const cashBackSubMenu = [
-    { label: "Cashback" }
-]
-export const posMachineSubMenu = [
-    { label: "POS Machine" }
-]
-export const invoicingSubMenu = [
-    { label: "Invoicing" }
-]
-export const salaryLoanDarkSubMenu = [ 
-    { label: "Salary Loan" }
-]
-export const businessAPISubMenu = [
-    { label: "Business API" }
-]
-export const payrollBentoSubMenu = [
-    { label: "Payroll with Bento" }
-]
-export const subAccountsSubMenu = [
-    { label: "Sub Accounts" }
-]
-export const sendMoneySubMenu = [
-    { label: "Send Money" }
-]
-export const airtimeAndInternetDataSubMenu = [
-    { label: "Airtime and Internet Data" }
-]
-export const billPaymentsSubMenu = [
-    { label: "Bill Payments" }
-]
-
 
 
 // Company Nav Menu
@@ -100,7 +178,6 @@ export const companyMenu = [
     { label: "Join Our Team" },
     { label: "About Us" },
 ]
-
 
 
 // Help Nav Menu
@@ -114,84 +191,8 @@ export const helpMenu = [
 ]
 
 
-
 // Login & SignUp Links
 export const signUpButton = [
     { label: "Sign in" },
     { label: "Join kuda" }
 ]
-
-
-
-
-
-// export const shoes = [
-//     {
-//         thumbnail: thumbnailShoe1,
-//         bigShoe: bigShoe1,
-//     },
-// ];
-
-// export const statistics = [
-//     { value: '1k+', label: 'Brands' },
-// ];
-
-// export const products = [
-//     {
-//         imgURL: shoe4,
-//         name: "Nike Air Jordan-01",
-//         price: "$200.20",
-//         subtext: "Enjoy seamless shopping with our complimentary shipping service."
-//     },
-// ];
-
-// export const footerLinks = [
-//     {
-//         title: "Products",
-//         links: [
-//             { name: "Air Force 1", link: "/" },
-//             { name: "Air Max 1", link: "/" },
-//             { name: "Air Jordan 1", link: "/" },
-//             { name: "Air Force 2", link: "/" },
-//             { name: "Nike Waffle Racer", link: "/" },
-//             { name: "Nike Cortez", link: "/" },
-//         ],
-//     },
-// ]
-
-
-
-
-// export const shoes = [
-//     {
-//         thumbnail: thumbnailShoe1,
-//         bigShoe: bigShoe1,
-//     },
-// ];
-
-// export const statistics = [
-//     { value: '1k+', label: 'Brands' },
-// ];
-
-// export const products = [
-//     {
-//         imgURL: shoe4,
-//         name: "Nike Air Jordan-01",
-//         price: "$200.20",
-//         subtext: "Enjoy seamless shopping with our complimentary shipping service."
-//     },
-// ];
-
-// export const footerLinks = [
-//     {
-//         title: "Products",
-//         links: [
-//             { name: "Air Force 1", link: "/" },
-//             { name: "Air Max 1", link: "/" },
-//             { name: "Air Jordan 1", link: "/" },
-//             { name: "Air Force 2", link: "/" },
-//             { name: "Nike Waffle Racer", link: "/" },
-//             { name: "Nike Cortez", link: "/" },
-//         ],
-//     },
-// ]

@@ -33,7 +33,6 @@ import BillPaymentsIconURL from "./BillPaymentsIconURL";
 
 export {
     ArrowRightIconURL,
-    
     DiscoverPersonalIconURL,
     TransferAndSpendIconURL,
     SaveFundsIconURL,
