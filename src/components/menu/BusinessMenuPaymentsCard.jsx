@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 
-const BusinessMenuPaymentsCard = ({ imgURL, label }) => {
+const BusinessMenuPaymentsCard = ({ iconURL, label }) => {
     return (
         <li>
             <Link to="#" alt={label}>
-                <span className="dropdown-link--icon">{imgURL}</span>
+                <span className="dropdown-link--icon">{iconURL}</span>
                 <span>{label}</span>
             </Link>
         </li>

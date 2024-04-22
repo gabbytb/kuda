@@ -6,9 +6,6 @@ import {
 import { signUpButton } from "../constants";
 
 
-
-
-
 const Nav = () => {
   return (
     <header className="header">
@@ -19,37 +16,41 @@ const Nav = () => {
           </Link>
 
           <ul className="main-menu-wrap">
-            <li className="nav-menu" data-toggle="dropdown">
-              <p id="menuDropdown" className="no-link color-primary">Personal
+            <li className="nav-menu">
+              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Personal
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              {/* <div className="dropdown-menu"> */}
-                <PersonalNav />
-              {/* </div> */}
+              <div className="dropdown-menu" aria-labelledby="menuDropdown">
+                <div className="dropdown-menu--wrap pt-0 dropdown-min--width">
+                  <PersonalNav />
+                </div>
+              </div>
             </li> 
-            <li className="nav-menu" data-toggle="dropdown">
-              <p id="menuDropdown" className="no-link color-primary">Business
+            <li className="nav-menu">
+              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Business
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              {/* <div className="dropdown-menu"> */}
-                <BusinessNav />
-              {/* </div> */}
+              <div className="dropdown-menu" aria-labelledby="menuDropdown">
+                <div className="dropdown-menu--wrap pt-0 dropdown-min--width">
+                  <BusinessNav />
+                </div>
+              </div>
             </li>   
-            <li className="nav-menu" data-toggle="dropdown">
-              <p id="menuDropdown" className="no-link color-primary">Company
+            <li className="nav-menu">
+              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Company
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              {/* <div className="dropdown-menu"> */}
+              <div className="dropdown-menu" aria-labelledby="menuDropdown">
                 <CompanyNav />
-              {/* </div> */}
+              </div>
             </li>
-            <li className="nav-menu" data-toggle="dropdown">
-              <p id="menuDropdown" className="no-link color-primary">Help
+            <li className="nav-menu">
+              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Help
                 <span className="dropDown"><Dropdown /></span>
               </p>
-              {/* <div className="dropdown-menu"> */}
+              <div className="dropdown-menu" aria-labelledby="menuDropdown">
                 <HelpNav />
-              {/* </div> */}
+              </div>
             </li> 
           </ul>
         </div>

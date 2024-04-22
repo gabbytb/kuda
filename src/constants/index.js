@@ -34,71 +34,71 @@ import {
 // Personal Nav Menu
 export const personalMenuOne = [
     { 
-        imgURL: <DiscoverPersonalIconURL />,
+        iconURL: <DiscoverPersonalIconURL />,
         label: "discover personal" 
     },
     {
-        imgURL: <TransferAndSpendIconURL />,
+        iconURL: <TransferAndSpendIconURL />,
         label: "transfer & spend"
     },
     {
-        imgURL: <SaveFundsIconURL />,
+        iconURL: <SaveFundsIconURL />,
         label: "save"
     },
     {
-        imgURL: <InvestmentsIconURL />, 
+        iconURL: <InvestmentsIconURL />, 
         label: "investments"
     },
     {
-        imgURL: <KudaCardIconURL />,
+        iconURL: <KudaCardIconURL />,
         label: "kuda card"
     }
 ]
 export const personalMenuTwoPayments = [
     {
-        imgURL: <ElectricityIconURL />,
+        iconURL: <ElectricityIconURL />,
         label: "Electricity"
     },
     {
-        imgURL: <AirtimeIconURL />,
+        iconURL: <AirtimeIconURL />,
         label: "Airtime"
     },
     {
-        imgURL: <InternetIconURL />,
+        iconURL: <InternetIconURL />,
         label: "Internet"
     },
     {
-        imgURL: <GiftCardsIconURL />,
+        iconURL: <GiftCardsIconURL />,
         label: "Gift Cards"
     },
     {
-        imgURL: <CardlessPaymentsIconURL />,
+        iconURL: <CardlessPaymentsIconURL />,
         label: "Cardless Payments"
     },
     {
-        imgURL: <TVCableIconURL />,
+        iconURL: <TVCableIconURL />,
         label: "TV"
     },
     {
-        imgURL: <BettingIconURL />,
+        iconURL: <BettingIconURL />,
         label: "Betting"
     },
     {
-        imgURL: <TransportIconURL />,
+        iconURL: <TransportIconURL />,
         label: "Transport"
     },
 ]
 export const personalMenuTwoCredit = [
     {
-        imgURL: <OverDraftsIconURL />,
+        iconURL: <OverDraftsIconURL />,
         label: "Overdrafts"
     },
     {
-        imgURL: <SalaryLoanIconURL />,
+        iconURL: <SalaryLoanIconURL />,
         label: "Salary Loan"
     },
     {
-        imgURL: <LoansIconURL />,
+        iconURL: <LoansIconURL />,
         label: "Loans"
     },
 ]
@@ -107,65 +107,65 @@ export const personalMenuTwoCredit = [
 // Business Nav Menu
 export const businessMenuOne= [
     {
-        imgURL: <DiscoverBusinessIconURL />,
+        iconURL: <DiscoverBusinessIconURL />,
         label: "Discover Business"
     },
     {
-        imgURL: <BusinessRegistrationIconURL />,
+        iconURL: <BusinessRegistrationIconURL />,
         label: "Business Registration"
     },
     {
-        imgURL: <SoftPosIconURL />,
+        iconURL: <SoftPosIconURL />,
         label: "Soft POS"
     },
     {
-        imgURL: <CashBackIconURL />,
+        iconURL: <CashBackIconURL />,
         label: "Cashback"
     },
     {
-        imgURL: <POSMachineIconURL />,
+        iconURL: <POSMachineIconURL />,
         label: "POS Machine"
     },
     {
-        imgURL: <InvoicingIconURL />,
+        iconURL: <InvoicingIconURL />,
         label: "Invoicing"
     },
     {
-        imgURL: <SalaryLoanDarkIconURL />,
+        iconURL: <SalaryLoanDarkIconURL />,
         label: "Salary Loan"
     },
     {
-        imgURL: <BusinessApiIconURL />,
+        iconURL: <BusinessApiIconURL />,
         label: "Business API"
     },
     {
-        imgURL: <PayrollBentoIconURL />,
+        iconURL: <PayrollBentoIconURL />,
         label: "Payroll with Bento"
     },
     {
-        imgURL: <SubAccountsIconURL />,
+        iconURL: <SubAccountsIconURL />,
         label: "Sub Accounts"
     },
 ]
 export const businessMenuTwoPayments = [
     {
-        imgURL: <SendMoneyIconURL />,
+        iconURL: <SendMoneyIconURL />,
         label: "Send Money"
     },
     {
-        imgURL: <TVCableIconURL />,
+        iconURL: <TVCableIconURL />,
         label: "TV"
     },
     {
-        imgURL: <AirtimeIconURL />,
+        iconURL: <AirtimeIconURL />,
         label: "Airtime and Internet Data"
     },
     {
-        imgURL: <ElectricityIconURL />,
+        iconURL: <ElectricityIconURL />,
         label: "Electricity"
     },
     {
-        imgURL: <BillPaymentsIconURL />,
+        iconURL: <BillPaymentsIconURL />,
         label: "Bill Payments"
     }
 ]
