@@ -45,7 +45,6 @@
 }
 
 
-
 @layer components {
     .brand svg {
         @apply w-28
