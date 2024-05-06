@@ -878,10 +878,18 @@ body::-webkit-scrollbar {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.customer_info img {
+.customer_info img, .customer_info div {
+  display: flex;
   height: 4rem;
   width: 4rem;
+  align-items: center;
+  justify-content: center;
   border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .customer_info p {

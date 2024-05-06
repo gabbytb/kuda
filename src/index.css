@@ -148,8 +148,8 @@
     .customer_info {
         @apply inline-flex items-center space-x-4
     }
-    .customer_info img {
-        @apply w-16 h-16 rounded-full
+    .customer_info img, .customer_info div {
+        @apply w-16 h-16 rounded-full flex  justify-center items-center text-white text-2xl font-black bg-skin-purpleColor
     }
     .customer_info p {
         @apply text-sm font-black

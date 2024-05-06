@@ -26,6 +26,11 @@ module.exports = {
           purpleColor: "#581c87",
         }
       },
+      backgroundColor: {
+        skin: {
+          purpleColor: "#581c87",
+        }
+      },
       width: {
         '4/8': '48%',
         '5/2': '52%',
