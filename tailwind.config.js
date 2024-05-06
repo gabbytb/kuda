@@ -1,32 +1,38 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  content: [
+    "./public/*.html",
+    "./src/**/*.{html,js,jsx,ts,tsx}",
+  ],
   theme: {
+    // fontSize: {
+    //   'xs': '.75rem',     // Extra Small
+    //   'sm': '.875rem',    // Small
+    //   'base': '1rem',     // Base
+    //   'lg': '1.125rem',   // Large
+    //   'xl': '1.25rem',    // Extra Large
+    //   '2xl': '1.5rem',    // 2 Extra Large
+    //   '3xl': '1.875rem',  // 3 Extra Large
+    //   '4xl': '2.25rem',   // 4 Extra Large
+    //   '5xl': '3rem',      // 5 Extra Large
+    //   '6xl': '4rem',      // 6 Extra Large
+    //   '7xl': '5rem',      // 7 Extra Large
+    //   'root': '12px',
+    // },
     extend: {
-      fontFamily: {
-        muli: ['Muli', 'sans-serif'],
-      },
-      boxShadow: {
-        "3xl": "0 4px 13px rgba(0, 0, 0, .05)",
-        "4xl": "15px 30px 40px rgba(64,25,109,.07)",
+      textColor: {
+        skin: {
+          purpleColor: "#581c87",
+        }
       },
       width: {
-        "18": "calc(100% - 100px)",
-      },
-      screens: {
-        'sm': '768px', 
-        // i.e the screen starts from 768px and extends to 991px
-        'md': '992px',
-        // i.e the screen starts from 992px and extends to 1024px
-        'lg': '1025px',
-        // i.e the screen starts from 1025px and extends to 1280px
-        'xl': '1281px',
-        // i.e the screen starts from 1281px and extends to 1299px
-        '2xl': '1300px',
-        // i.e the screen starts from 1300px
+        '4/8': '48%',
+        '5/2': '52%',
+        '3/3': 'calc(33.33% - 13px)',
       },
     },
   },
-  plugins: []
+  plugins: [],
 }
+

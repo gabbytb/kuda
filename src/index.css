@@ -1,288 +1,131 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-:root {
-    --primaryColor: #40196d;
-    --lightBlueColor: #1dcbef;
-    --blackColor: #000;
-    --successColor: #48d38a;
-    --negativeColor: #f7685b;
-    --textColor: #979797;
-    --whiteColor: #fff;
-    --whiteAlt: #fff;
-    --darkAlt: #000;
-    --offWhite: #f9f9f9;
-    --offWhiteTrans: hsla(228, 7%, 87%, .3);
-    --borderOff: hsla(228, 7%, 87%, .5);
-    --offText: rgba(0, 0, 0, .5);
-    --bgOffset: #f4f4f4;
-    --placeHolder: #979797;
-    --offBlue: #eff1ff;
-    --boxShadow: rgba(64, 25, 109, .07);
-    --offBlueTran: rgba(223, 227, 255, .3);
-    --primaryAlt: #40196d;
-    --offGreen: rgba(72, 211, 138, .5);
-    --ctaOffBlue: rgba(64, 25, 109, .3);
-    --overlay: rgba(64, 25, 109, .2);
-    --successColorTrans: #dcffec;
-    --redColor: #28991b;
+
+@layer base {
+    /* Resetting default browser styles */
+    /* *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } */
+    
+    /* Setting typography defaults */
+    :root {
+        /* --font-family-sans: 'Inter', sans-serif;
+        --font-family-serif: 'Georgia', serif;
+        --font-family-mono: 'Menlo', monospace;
+        font-family: var(--font-family-sans); */
+        font-size: 12px;
+        line-height: 1.5;
+        /* color: #333; */
+    }
+    
+    /* Hide scrollbars */
+    body::-webkit-scrollbar {
+        display: none
+    }
+    
+    /* Default Container Width */
+    .container {
+        max-width: 1180px;
+    }
 }
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-.no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
+
 
 
 @layer components {
-    .max-container {
-        max-width: 1180px;
-        margin: 0 auto;
+    .brand svg {
+        @apply w-28
     }
-    .nav-container {
-        @apply max-w-[1500px] my-0 mx-auto block lg:px-[60px] px-10
+    .nav-links p {
+        @apply text-lg font-semibold text-skin-purpleColor capitalize inline-flex items-baseline
     }
-    .has-left-margin {
-        @apply h-[42px] md:ml-[28px] md:mr-0 sm:ml-auto sm:mr-[17px]
+    .nav-links span {
+        @apply ml-2
     }
-    .no-link {
-        @apply flex items-baseline h-10 cursor-pointer
+    .menu-right a {
+        @apply text-lg text-skin-purpleColor capitalize font-semibold rounded-lg
     }
-    .header {     
-        @apply flex justify-between items-center bg-white z-50 w-full left-0 fixed top-0 shadow-3xl xl:h-[65px] sm:h-[58px] h-[65px] 
+    .menu-right a:last-child {
+        @apply text-white bg-purple-900 px-10 py-3 rounded-xl ml-36
     }
-    .header-wrap {
-        @apply flex justify-between items-center w-full
+    .social--links svg:last-child {
+        @apply ml-4
     }
-    .header-left {
-        @apply flex items-center
+    .home-section-one--left {
+        @apply w-4/8
     }
-    .main-menu-wrap {
-        @apply hidden md:flex 2xl:ml-[15%] xl:ml-[10%] lg:ml-[8%] md:ml-[8%] sm:hidden
+    .home-section-one--right {
+        @apply w-5/2
     }
-    .header-center {
-        @apply hidden md:flex justify-center items-center ml-auto
+    .home-section-one--left h1 {
+        @apply text-6xl font-bold text-purple-950
     }
-    .header-right {
+    .home-section-one--left h4 {
+        @apply text-2xl/normal font-medium text-slate-800
+    }
+    .home-section-three--left h2 {
+        @apply text-5xl/tight font-bold text-purple-950   
+    }
+    .home-section-three--left p {
+        @apply text-xl/normal font-medium text-slate-800
+    }
+    .home-section-three--left .section-three--cta a {
+        @apply inline-flex justify-between items-center
+    }
+    .home-section-three--left .section-three--cta span:first-child {
+        @apply underline text-xl font-semibold text-skin-purpleColor
+    }
+    .home-section-three--right .anim-wrap svg {
         @apply relative 
     }
-    .header-right svg {
-        @apply h-[30px] w-[30px]
+    .home-section-four--right h2 {
+        @apply text-4xl/tight font-black text-purple-950 
     }
-    .header-center a:first-child {
-        @apply text-[12.25px] font-muli font-bold text-[var(--primaryAlt)] capitalize md:block sm:hidden
+    .home-section-four--right p {
+        @apply text-xl/normal font-medium text-slate-800
     }
-    .header-center a:last-child {                      
-        @apply font-muli font-bold leading-none p-[15px] rounded-[10px] capitalize justify-center items-center bg-[var(--primaryColor)] cursor-pointer text-white 
-        xl:text-sm sm:text-[12.5px] 
-        xl:h-[43px] sm:h-[39px] 
-        xl:min-w-[136px] xl:max-w-[136px] 
-        sm:min-w-[115px] 
-        2xl:ml-[40px] md:ml-[35px] 
-        md:flex sm:hidden
+    .home-section-five--left h2 {
+        @apply text-5xl/tight font-bold text-purple-950   
     }
-    .logo {
-        @apply min-w-[100px] h-[16px] w-[100px] xl:h-5 xl:w-[100px] lg:h-[18px]
+    .home-section-five--left p {
+        @apply text-xl/normal font-medium text-slate-800
     }
-    .logo svg {
-        @apply xl:h-[18px] xl:w-[81px] h-[16px] w-auto
+    .home-section-five--left .section-five--cta a {
+        @apply inline-flex justify-between items-center
     }
-    .nav-menu {
-        @apply min-w-[80px] relative xl:mr-[42px] md:mr-[36px] 
+    .home-section-five--left .section-five--cta span:first-child {
+        @apply underline text-xl font-semibold text-skin-purpleColor
     }
-    .no-link {
-        @apply items-center
+    .home-section-six--right h2 {
+        @apply text-4xl/tight font-black text-purple-950 
     }
-    .color-primary {
-        @apply text-[var(--primaryColor)]
+    .home-section-six--right p {
+        @apply text-xl/normal font-medium text-slate-800
     }
-    .nav-menu p {
-        @apply text-[12.25px] font-bold font-muli cursor-pointer h-10 items-baseline
+    .home-section-six--right .section-six--cta a {
+        @apply inline-flex justify-between items-center
     }
-    li.nav-menu .no-link {
-        @apply items-center
+    .home-section-six--right .section-six--cta span:first-child {
+        @apply underline text-xl font-semibold text-skin-purpleColor
     }
-    li > a {
-        display: inline-flex;
+    .home-section-seven--left h2 {
+        @apply text-5xl/tight font-bold text-purple-950   
     }
-    .dropDown {
-        @apply ml-[7px]
+    .home-section-seven--left p {
+        @apply text-xl/normal font-medium text-slate-800
     }
-    .dropDown svg {
-        @apply block xl:w-[9px] xl:h-[6px] md:h-[5px] md:w-auto
+    .home-section-seven--left .section-seven--cta a {
+        @apply inline-flex justify-between items-center
     }
-    .nationality svg {
-        @apply h-[30px] w-[30px] 
+    .home-section-seven--left .section-seven--cta span:first-child {
+        @apply underline text-xl font-semibold text-skin-purpleColor capitalize
     }
-    .menu-subtext {
-        @apply text-[11.04px] px-6 pt-4 pb-1 uppercase text-[var(--placeHolder)] 
-    }
-    .dropdown-menu {
-        display: block !important;
-        padding-top: 0;
-        position: absolute;
-        transition-delay: 1s !important;
-        transition: opacity .5s cubic-bezier(.455,.03,0,1), top .5s cubic-bezier(.455,.03,0,1) !important;
-        width: -webkit-max-content;
-        width: max-content;
-    }
-    .dropdown-menu {
-        left: 0;
-        opacity: 0;
-        top: 44px !important;
-        /* visibility: hidden;
-        visibility: visible; */
-    }
-    .dropdown-menu--wrap {
-        border: 1px solid hsla(228, 7%, 87%, .5);
-        white-space: nowrap;
-        @apply bg-white absolute rounded-[5px] py-5 px-0 shadow-4xl 
-    }
-    .dropdown-menu--wrap ul:last-child {
-        background-color: var(--offWhite) !important;
-    }
-    .dropdown-menu--wrap li {
-        margin: 0 !important;
-        @apply py-0 px-[26px]
-    }
-    .dropdown-menu--wrap li a {
-        @apply inline-flex items-center rounded-[5px] px-0 py-[10px] font-extralight text-sm text-black font-muli
-    }
-    .dropdown-min--width {
-        min-width: 230px;
-    }
-    .dropdown-link--icon {
-        @apply flex mr-[15px]
-    }
-    .dropdown-link--icon svg {
-        @apply h-[25px] w-[25px]
-    }
-    .mobile-toggle {
-        @apply md:hidden sm:flex sm:items-center sm:h-5 sm:w-[23px]
-    }
-    .hamburger {
-        display: inline-block;
-        height: auto;
-        position: relative;
-        top: 3px;
-        width: 23px;
-    }
-    .hamburger .hamburger--inner {
-        transition-duration: 75ms;
-        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
-    }
-    .hamburger .hamburger--inner:before {
-        top: -9px;
-        transition: top 75ms ease .12s, opacity 75ms ease;
-    }
-    .hamburger .hamburger--inner:after, 
-    .hamburger .hamburger--inner:before {
-        background-color: var(--primaryAlt);
-        border-radius: 4px;
-        content: "";
-        display: block;
-        height: 2px;
-        position: absolute;
-        transition-duration: .15s;
-        transition-property: transform;
-        transition-timing-function: ease;
-        width: 20px;
-    }
-
-
-
-    .hasAnimation {
-        @apply relative mt-[-12px]
-    }
-
-
-
-    .home-sections {
-        @apply mt-[65px] pt-12 pb-[60px]
-    }
-    .home-section--one {
-        @apply flex min-h-[555px] px-10
-    }
-    .home-section-one--wrap {
-        @apply flex justify-between items-center w-full
-    }
-    .home-section-one--48 {
-        @apply w-[42%]
-    }
-    .home-section-one--52 {
-        @apply w-[52%]
-    }
-    .home-section-48--wrap {
-        @apply max-w-[396px]
-    }
-    .home-section-52--wrap {
-        @apply flex justify-center
-    }
-    .main-heading {
-        @apply text-[42px] leading-[1.15] font-black font-muli text-[var(--primaryColor)] mb-5
-    }
-    .main-desc {
-        @apply mb-5 text-[17.5px] font-muli font-semibold text-black leading-normal
-    }
-    .social--links {
-        @apply flex mb-5 pt-[14px]
-    }
-    .first--anim {
-        @apply w-full h-full overflow-hidden my-0 mx-auto outline-none
-    }
-    .first--image {
-        @apply absolute top-0 bottom-0 left-0 right-0 h-full w-full 
-    }
-    .first--image > div {
-        @apply flex w-full h-full overflow-hidden my-0 mx-auto outline-none
-    }
-    .first--image svg {
-        height: auto !important;
-        margin: auto;
-        position: relative;
-        top: -11px;
-        width: calc(100% - 100px) !important;
-    }
-
-
-
-
-    /* Fixed Footer  */
-    .mobile-toogle {
-        @apply sm:hidden flex fixed bottom-0 left-0 right-0 bg-[var(--offBlue)] w-full h-[80px] z-[9] px-5
-    }
-    .fixed-bottom-wrap {
-        @apply w-full flex justify-between items-center 
-    }
-    .fixed-bottom--right {
-        @apply flex items-center
-    }
-    .fixed-bottom--badge {
-        @apply flex
-    }
-    .fixed-bottom--stars {
-        @apply block ml-4
-    }
-    .fixed-bottom--name { 
-        @apply text-[16.1px] leading-none font-extrabold text-[var(--primaryColor)] font-muli
-    }
-    .star-rating {
-        @apply mt-[6px]
-    }
-    .fixed-bottom--badge svg {
-        @apply w-[50px] h-[50px]
-    }
-    .star-rating svg {
-        @apply w-[79px] h-[13px]
-    }
-    .web-cta {
-        @apply text-[13px] font-bold font-muli p-[15px] rounded-[10px] leading-none bg-[var(--primaryColor)] text-white h-10 flex items-center
-    }
-
 }
+
+

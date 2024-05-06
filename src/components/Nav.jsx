@@ -1,90 +1,75 @@
 import { Link } from "react-router-dom";
-import { 
-  HeaderLogo, Dropdown, NigeriaFlag, SignupButton, 
-  PersonalNav, BusinessNav, CompanyNav, HelpNav 
-} from "./";
-import { signUpButton } from "../constants";
+import { BrandLogo } from "../assets/images";
+import { NgFlag, DropdownIcon } from "../assets/icons";
+
+
+
+
 
 
 const Nav = () => {
-  return (
-    <header className="header">
-      <div className="header-wrap nav-container">
-        <div className="header-left">
-          <Link to="/" alt="logo" className="logo">
-            <HeaderLogo />
-          </Link>
 
-          <ul className="main-menu-wrap">
-            <li className="nav-menu">
-              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Personal
-                <span className="dropDown"><Dropdown /></span>
-              </p>
-              <div className="dropdown-menu" aria-labelledby="menuDropdown">
-                <div className="dropdown-menu--wrap pt-0 dropdown-min--width">
-                  <PersonalNav />
-                </div>
-              </div>
-            </li> 
-            <li className="nav-menu">
-              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Business
-                <span className="dropDown"><Dropdown /></span>
-              </p>
-              <div className="dropdown-menu" aria-labelledby="menuDropdown">
-                <div className="dropdown-menu--wrap pt-0 dropdown-min--width">
-                  <BusinessNav />
-                </div>
-              </div>
-            </li>   
-            <li className="nav-menu">
-              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Company
-                <span className="dropDown"><Dropdown /></span>
-              </p>
-              <div className="dropdown-menu" aria-labelledby="menuDropdown">
-                <CompanyNav />
-              </div>
-            </li>
-            <li className="nav-menu">
-              <p id="menuDropdown" data-toggle="dropdown-menu" className="no-link color-primary">Help
-                <span className="dropDown"><Dropdown /></span>
-              </p>
-              <div className="dropdown-menu" aria-labelledby="menuDropdown">
-                <HelpNav />
-              </div>
-            </li> 
-          </ul>
-        </div>
-          
-        <div className="header-center">
-          {
-            signUpButton.map((item) => {
-              return (
-                <SignupButton key={item.label} label={item.label} />
-              );
-            })
-          }
-        </div>
+    return (
+        <header className="h-20 flex bg-white shadow-md">
+            <div className="flex justify-between items-center w-full px-20">
+                
+                
+                {/******* Menu Left *******/}
+                <div className="flex justify-start w-full menu-left">
 
-        <div className="header-right has-left-margin" data-toggle="dropdown">
-          <div className="no-link">
-            <div className="dropDown nationality">
-              <NigeriaFlag />
+                    {/* Brand Logo */}
+                    <div className="min-w-36 brand">
+                        <BrandLogo />
+                    </div>
+                    {/* Brand Logo */}
+
+
+
+                    {/* Nav Links */}
+                    <ul className="inline-flex ml-28 w-full space-x-16 nav-links">
+                        <li>
+                            <p>personal <span><DropdownIcon /></span></p>
+                        </li>
+                        <li>
+                            <p>business <span><DropdownIcon /></span></p>
+                        </li>
+                        <li>
+                            <p>company <span><DropdownIcon /></span></p>
+                        </li>
+                        <li>
+                            <p>help <span><DropdownIcon /></span></p>
+                        </li>
+                    </ul>
+                    {/* Nav Links */}
+
+                </div>
+                {/******* Menu Left *******/}
+
+                
+
+
+                {/******* Menu Right *******/}
+                <div className="inline-flex justify-end items-center w-full space-x-8 menu-right">
+                    <Link to="#" alt="sign in">
+                        sign in
+                    </Link>
+                    <Link to="#" alt="join kuda">
+                        join kuda
+                    </Link>
+                </div>
+                {/******* Menu Right *******/}
+
+
+
+
+                {/******* Nationality Dropdown *******/}
+                <div className="ml-12">
+                    <NgFlag />
+                </div>
+                {/******* Nationality Dropdown *******/}
             </div>
-          </div>
-          <div className="dropdown-menu">
-
-          </div>
-        </div>
-
-        <div className="mobile-toggle">
-          <div className="hamburger">
-            <div className="hamburger--inner"></div>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
+        </header>
+    );
 };
-
 
 export default Nav;

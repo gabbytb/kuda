@@ -1,20 +1,14 @@
-import { 
-  Nav, FooterFixed, 
-} from "../components";
-import {
-    HomeBody,
-} from "../sections";
+import { Nav, HomeBody } from "../components";
 
 
 
 const Home = () => {
   return (
     <>
-        <Nav />
-        <HomeBody />
-        <FooterFixed />
+      <Nav />
+      <HomeBody />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
