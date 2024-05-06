@@ -5,6 +5,8 @@ import HomeSectionFour from "./HomeSectionFour";
 import HomeSectionFive from "./HomeSectionFive";
 import HomeSectionSix from "./HomeSectionSix";
 import HomeSectionSeven from "./HomeSectionSeven";
+import HomeSectionEight from "./HomeSectionEight";
+import HomeSectionNine from "./HomeSectionNine";
 
 
 export {
@@ -15,4 +17,6 @@ export {
     HomeSectionFive,
     HomeSectionSix,
     HomeSectionSeven,
+    HomeSectionEight,
+    HomeSectionNine,
 }
